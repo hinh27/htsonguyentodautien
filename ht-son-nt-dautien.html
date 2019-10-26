@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let snt;
+    let dem=0;
+    let demc=0;
+    let n = prompt("Nhập bao nhiêu số cần liệt kê:");
+    let b;
+    let a = 1000;
+    for (snt=2; snt<=a; snt++) {
+        dem = 0;
+        for (b = 1; b <= a; b++)
+            if (snt % b == 0)
+                dem++;
+        if (dem == 2) {
+             document.write(snt+",");
+            demc++;
+        }
+        if (demc == n)
+            break;
+    }
+</script>
+</body>
+</html>
